@@ -157,4 +157,5 @@ footer img{
 
 #redes li:hover{
     opacity: 0.5;
+    transform: scale(1.5,1.5);
 }
