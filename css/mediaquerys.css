@@ -1,0 +1,57 @@
+/*Media query*/
+
+@media (max-width: 1225px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 1085px) {
+    #main-header {
+        height: 100%;
+        line-height: 65px;
+    }
+    #logo {
+        width: 60%;
+    }
+}
+
+@media (max-width: 999px) {
+    #logo {
+        width: 227px;
+        float: none;
+        margin: 0px auto;
+    }
+    #menu {
+        float: none;
+        margin: 0px auto;
+    }
+    #slider {
+        overflow: hidden;
+        height: 150px;
+    }
+    #slider h2 {
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 377px) {
+    #slider h2 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 377px) {
+    #menu {
+        width: 100%;
+        text-align: center;
+    }
+    #menu ul li {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+}
