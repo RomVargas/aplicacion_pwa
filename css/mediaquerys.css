@@ -45,11 +45,13 @@
         float: none;
         margin-top: 20px;
         margin-bottom: 20px;
-        background: greenyellow;
+        background: rgb(47, 78, 255);
+        color: black;
     }
     .services p,
     .videos p {
         margin-top: 10px;
+        color: white;
     }
     .services img {
         margin-bottom: 7px;

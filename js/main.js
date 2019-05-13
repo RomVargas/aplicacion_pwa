@@ -1,3 +1,3 @@
-$(document).ready(finction() {
-    alert("Hola JQuery");
+$(document).ready(function() {
+    console.log("Hola JQuery");
 });
