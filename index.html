@@ -9,6 +9,22 @@
         <meta name="viewport" content="width=device-with, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <!-- icino -->
         <link rel="shortcut icon" type="image/png" href="img/avatarRom20x20.png" />
+
+        <!-- Color de la app -->
+        <meta name="theme-color" content="blue" />
+        <!-- Optimizacion para movil -->
+        <meta name="MobileOptimized" content="width" />
+        <meta name="HandheldFriendly" content="true" />
+
+        <!-- Meta etiquetas para apple -->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link rel="apple-touch-icon" href="img/avatarRom.png" />
+        <link rel="apple-touch-startup-image" href="img/avatarRom.png" />
+
+        <!-- Manifiesto Configuracion general de PWA -->
+        <link rel="manifest" href="manifest.json" />
+
         <!-- Hoja de estilos -->
         <link rel="stylesheet" href="css/styles.css" />
         <!-- Archivo mediaquery para responsive -->
@@ -33,17 +49,17 @@
                 <div id="menu">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="#main-header">
                                 Inicio
                             </a>
                         </li>
                         <li>
-                            <a href="html/noticias.html">
-                                Noticias
+                            <a href="#services">
+                                Servicios
                             </a>
                         </li>
                         <li>
-                            <a href="html/videos.html">
+                            <a href="#videos">
                                 Videos
                             </a>
                         </li>
@@ -53,14 +69,13 @@
                             </a>
                         </li>
                         <li>
-                            <a href="html/contacto.html">
+                            <a href="#contacto">
                                 Contacto
                             </a>
                         </li>
                     </ul>
                 </div><!-- fin de menu-->
             </div><!-- fin de container-->
-            <!--cambio-->
         </header>
 
         <div class="clearfix"></div>
@@ -151,7 +166,7 @@
 
          <div class="clearfix"></div>
 
-        <footer><!-- inicia seccion footer -->
+        <footer id="contacto"><!-- inicia seccion footer -->
             <div class="container">
                 <h2 class="subheader">Contacto</h2>
                 <p> Enviame un mensaje a cualquier de estas redes sociales :)</p>
