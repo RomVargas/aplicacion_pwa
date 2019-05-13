@@ -1,3 +1,15 @@
+// Service Worker
+if ('serviceWorker' in navigator) {
+    console.log('Posible usar service Worker en navegador');
+    navigator.serviceWorker.register('js/sw.js')
+        .then(res => console.log('serviceWorker cargado correctamente', res))
+        .catch(err => console.log('NO se cargo serviceWorker', err));
+
+} else {
+    console.log('NO es Posible usar service Worker en navegador');
+}
+
+//Scroll suavizado
 $(document).ready(function() {
     console.log("Hola JQuery");
 
