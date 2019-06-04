@@ -20,11 +20,15 @@ self.addEventListener('install', e => {
         caches.open(CACHE_NAME)
         .then(cache => {
             return cache.addAll(urlsToCache)
-                .then(() => self.skipWaiting())
+                .then(() => {
+                    self.skipWaiting();
+                });
         })
-        .catch(err => console.log('Falló registro de cache', err))
-    )
-})
+        .catch(err => {
+            console.log('No se ha registrado el cache', err);
+        })
+    );
+});
 
 //una vez que se instala el SW, se activa y busca los recursos para hacer que funcione sin conexión
 self.addEventListener('activate', e => {
@@ -60,5 +64,5 @@ self.addEventListener('fetch', e => {
             //recuperar de la petición a la url
             return fetch(e.request)
         })
-    )
-})
+    );
+});
