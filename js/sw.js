@@ -24,9 +24,7 @@ self.addEventListener('install', e => {
                     self.skipWaiting();
                 });
         })
-        .catch(err => {
-            console.log('No se ha registrado el cache', err);
-        })
+        .catch(err => console.log('No se ha registrado el cache', err))
     );
 });
 
@@ -44,12 +42,12 @@ self.addEventListener('activate', e => {
                         return caches.delete(cacheName)
                     }
                 })
-            )
+            );
         })
         // Le indica al SW activar el cache actual
         .then(() => self.clients.claim())
-    )
-})
+    );
+});
 
 //cuando el navegador recupera una url
 self.addEventListener('fetch', e => {
